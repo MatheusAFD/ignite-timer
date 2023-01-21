@@ -13,3 +13,8 @@ const newCycleFormValidationSchema = zod.object({
       minutesAmount: 0,
     },
   })
+
+  function handleCreateNewCycle(data: NewCycleFormData) {
+    console.log(data)
+    reset()
+  }
