@@ -26,3 +26,20 @@ interface CyclesContextType {
 interface ChildrenInterface {
   children: ReactNode
 }
+
+  return (
+    <CyclesContext.Provider
+      value={{
+        cycles,
+        activeCycle,
+        activeCycleId,
+        amountSecondsPassed,
+        markCurrentCycleAsFinished,
+        setSecondsPassed,
+        createNewCycle,
+        interruptCurrentCycle,
+      }}
+    >
+      {children}
+    </CyclesContext.Provider>
+  )
